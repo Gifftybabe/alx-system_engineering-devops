@@ -1,28 +1,46 @@
-# Loops, conditions and parsing
-![image](https://user-images.githubusercontent.com/105078661/214997662-73902f2c-2767-4fa1-a875-268f693ecc35.png)
+# Processes and signals
+![image](https://user-images.githubusercontent.com/105078661/215111354-815d93fc-c398-4b3a-adca-2dddde56c2f9.png)
 # Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
 # General 
-- How to create SSH keys
-- What is the advantage of using #!/usr/bin/env bash over #!/bin/bash
-- How to use while, until and for loops
-- How to use if, else, elif and case condition statements
-- How to use the cut command
-- What are files and other comparison operators, and how to use them
+- What is a PID
+- What is a process
+- How to find a process’ PID
+- How to kill a process
+- What is a signal
+- What are the 2 signals that cannot be ignored
 
-The bash while loop is a control flow statement that allows code or commands to be executed repeatedly based on a given condition.
+# Signals
+Signals are (primarily) asynchronous notification of events. There are many different signals which can arise from within or outside the process.
+Signals arrive for a process and are posted in the kernel. The kernel can then arrange:
+ 
 
-A while loop is a statement that iterates over a block of code till the condition specified is evaluated to false. We can use this statement or loop in our program when do not know how many times the condition is going to evaluate to true before evaluating to false.  
+- Perform some default action on the process
+- To notify the process by causing a signal handler to be invoked in the process. The handler is a user level procedure.
 
-The syntax of a while loop in BASH is something like below:
+## Where do signals come from
 
-while [ condition ];
-do
-    # statements
-    # commands
-done  
-If the condition is true then the commands inside the while block are executed and are iterated again after checking the condition. Also if the condition is false the statements inside the while block are skipped and the statements after the while block are executed. 
+Signals come from either:
+
+A different process: the process invokes a system call which posts a signal to the target process.
+The same process: typically, an error such as divide-by-zero.
+from the kernel: timer signal (requested by process)
+Example:
+
+Signals allow users to control processes. For example, typing the following in csh results:
+- ^C in csh causes the shell to send a SIGINT to the current foreground process if any.
+- ^Z in csh causes the shell to send a SIGSTOP to the current foreground process.
+- typing "fg" sends a SIGCONT signal to the foreground process.
+
+## Signal types:
+- termination of a process: death of a child
+- process induced exceptions: address violation, floating point error
+- unrecoverable errors during a system call: running out of resources such as memory
+- unexpected error during a system call: writing a pipe which has no reader, non existant system call, illegal return. Could send an error indication, but programs which don't test error indications would never know.
+- emanating from processes in user mode: timer alarm or by sending a signal.
+- Terminal interaction: hangup on a login terminal
+- Tracing execution of the program.
 
 
-![image](https://user-images.githubusercontent.com/105078661/214998764-a0e56a01-2f1a-4f5d-bf6b-5ecafe34e5f6.png)
+![image](https://user-images.githubusercontent.com/105078661/215111821-d57e0a9f-44f1-4497-a419-1a9d87b796b5.png)
