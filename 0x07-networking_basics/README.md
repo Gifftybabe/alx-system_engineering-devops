@@ -1,28 +1,51 @@
-# Loops, conditions and parsing
-![image](https://user-images.githubusercontent.com/105078661/214997662-73902f2c-2767-4fa1-a875-268f693ecc35.png)
+# What is the OSI Model?
+Open system: 
+A system which is connected to the network and is ready for communication. 
+
+Closed system: 
+A system which is not connected to the network and can’t be communicated with. 
+
+Computer Network: 
+An interconnection of multiple devices, also known as hosts, that are connected using multiple paths for the purpose of sending/receiving data or media. Computer networks can also include multiple devices/mediums which help in the communication between two different devices; these are known as Network devices and include things such as routers, switches, hubs, and bridges. 
+
+![image](https://user-images.githubusercontent.com/105078661/216421748-bd9a3f8a-2711-4f99-8afe-41e5d6fd1e3d.png)
+
+Network Topology: 
+The layout arrangement of the different devices in a network. Common examples include: Bus, Star, Mesh, Ring, and Daisy chain. 
+
+![image](https://user-images.githubusercontent.com/105078661/216422599-239429b8-f5af-4912-8653-a84c01d44582.png)
+
+
 # Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-# General 
-- How to create SSH keys
-- What is the advantage of using #!/usr/bin/env bash over #!/bin/bash
-- How to use while, until and for loops
-- How to use if, else, elif and case condition statements
-- How to use the cut command
-- What are files and other comparison operators, and how to use them
+# OSI Model
+- What it is
+- How many layers it has
+- How it is organized
 
-The bash while loop is a control flow statement that allows code or commands to be executed repeatedly based on a given condition.
+# What is a LAN
+- Typical usage
+- Typical geographical size
 
-A while loop is a statement that iterates over a block of code till the condition specified is evaluated to false. We can use this statement or loop in our program when do not know how many times the condition is going to evaluate to true before evaluating to false.  
+# What is a WAN
+- Typical usage
+- Typical geographical size
 
-The syntax of a while loop in BASH is something like below:
+# What is the Internet
+- What is an IP address
+- What are the 2 types of IP address
+- What is localhost
+- What is a subnet
+- Why IPv6 was created
 
-while [ condition ];
-do
-    # statements
-    # commands
-done  
-If the condition is true then the commands inside the while block are executed and are iterated again after checking the condition. Also if the condition is false the statements inside the while block are skipped and the statements after the while block are executed. 
+# TCP/UDP
+- What are the 2 mainly used data transfer protocols for IP (transfer level on the OSI schema)
+- What is the main difference between TCP and UDP
+- What is a port
+- Memorize SSH, HTTP and HTTPS port numbers
+- What tool/protocol is often used to check if a device is connected to a network
 
 
-![image](https://user-images.githubusercontent.com/105078661/214998764-a0e56a01-2f1a-4f5d-bf6b-5ecafe34e5f6.png)
+![image](https://user-images.githubusercontent.com/105078661/216423568-04c9dfc6-d4f7-4b97-b7f6-7f8aa2db2a3e.png)
+
