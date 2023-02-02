@@ -1,16 +1,16 @@
 # Networking basics #0
-* Open system: 
+** Open system: 
 A system which is connected to the network and is ready for communication. 
 
-* Closed system: 
+** Closed system: 
 A system which is not connected to the network and can’t be communicated with. 
 
-* Computer Network: 
+** Computer Network: 
 An interconnection of multiple devices, also known as hosts, that are connected using multiple paths for the purpose of sending/receiving data or media. Computer networks can also include multiple devices/mediums which help in the communication between two different devices; these are known as Network devices and include things such as routers, switches, hubs, and bridges. 
 
 ![image](https://user-images.githubusercontent.com/105078661/216421748-bd9a3f8a-2711-4f99-8afe-41e5d6fd1e3d.png)
 
-* Network Topology: 
+** Network Topology: 
 The layout arrangement of the different devices in a network. Common examples include: Bus, Star, Mesh, Ring, and Daisy chain. 
 
 ![image](https://user-images.githubusercontent.com/105078661/216422599-239429b8-f5af-4912-8653-a84c01d44582.png)
