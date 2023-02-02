@@ -1,5 +1,5 @@
 # Networking basics #1
-**IP Addresses
+**IP Addresses: 
 In order to send and direct data across a network, computers need to be able to identify destinations and origins. This identification is an IP—Internet Protocol—address. An IP address is just a set of four numbers between 1 and 254, separated by dots. An example of an IP address is 173.194.43.7.
 
 **Localhost is the hostname or the computer that is currently in use to run a program, in which the computer has the role as a virtual server. In web development, you can develop a server by editing the code in the localhost and exporting your data to the server.
