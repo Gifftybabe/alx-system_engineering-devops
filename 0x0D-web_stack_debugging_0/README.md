@@ -6,5 +6,9 @@ In this debugging series, broken/bugged webstacks will be given to you, the fina
 
 Let’s start with a very simple example. My server must:
 
-have a copy of the /etc/passwd file in /tmp
-have a file named /tmp/isworking containing the string OK
+- have a copy of the /etc/passwd file in /tmp
+- have a file named /tmp/isworking containing the string OK
+
+
+
+![image](https://user-images.githubusercontent.com/105078661/228017009-d591f63c-ec02-4d45-882d-7f700ecc6f56.png)
